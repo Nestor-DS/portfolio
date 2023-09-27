@@ -1,0 +1,92 @@
+.services__container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    flex-wrap: wrap; /* Para que los artículos se envuelvan cuando la pantalla es más estrecha */
+    gap: 3rem;
+}
+
+.badge_title {
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.badge_title:hover {
+    color: rgb(184, 212, 255);
+    transition: var(--transition);
+}
+
+.service {
+    width: 25rem;
+    background: var(--color-bg-variant);
+    border: 1px solid var(--color-primary);
+    border-radius: 0 0 2rem 2rem;
+    height: fit-content;
+    transition: var(--transition);
+}
+
+.service:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.service__head {
+    background: var(--color-primary);
+    padding: 1.2rem;
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.service__head h3 {
+    color: var(--color-bg);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.service__list {
+    padding: 2rem;
+}
+
+.service__list li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.service__list-icon {
+    color: var(--color-primary);
+    margin-top: 2px;
+}
+
+/* Texto blanco por defecto */
+.service__list p {
+    font-size: 0.9rem;
+    color: white; /* Color de texto blanco por defecto */
+}
+
+/* Cambiar el color del texto cuando se pasa el ratón sobre él */
+.service__list:hover p {
+    color: var(--color-bg-primary); /* Cambia al color de fondo principal cuando se pasa el ratón */
+}
+
+/* Media queries (Medium devices) */
+
+@media screen and (max-width: 1024px){
+    .services__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .service {
+        height: auto;
+    }
+}
+
+/* Media queries (small devices) */
+
+@media screen and (max-width: 600px){
+    .services__container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
