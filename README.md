@@ -8,6 +8,6 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 Librarys
-> npm install @emailjs/browser
-> npm install react-icons --save
-> npm install swiper
+npm install @emailjs/browser
+npm install react-icons --save
+npm install swiper
