@@ -12,13 +12,17 @@
     transition: var(--transition);
 }
 
+#btnGit {
+    padding: 10px 30px;
+}
+
 .portfolio__item:hover {
     border-color: var(--color-primary-variant);
     background: transparent;
 }
 
 .portfolio__item-image {
-    border-radius: 1.5rem;
+    border-radius: 0rem;
     overflow: hidden;
 }
 
@@ -26,10 +30,12 @@
     margin: 1.2rem 0 2rem;
 }
 
+
 .portfolio__item-cta {
     display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    justify-content: center; /* Centrar horizontalmente los elementos */
+    align-items: center; /* Centrar verticalmente los elementos (opcional) */
+    margin-top: 10px; /* Espacio superior para separar el botón de otros elementos */
 }
 
 /*-------------- Medium devices ----------------*/

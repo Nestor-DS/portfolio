@@ -11,7 +11,7 @@ nav {
     display: flex;
     gap: 0.8rem;
     border-radius: 3rem;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(20px);
 }
 
 nav a {
@@ -21,6 +21,7 @@ nav a {
     display: flex;
     color: var(--color-light);
     font-size: 1rem;
+    backdrop-filter: blur(20px);
 }
 
 nav a:hover {
@@ -30,4 +31,5 @@ nav a:hover {
 nav a.active {
     background: var(--color-primary-variant);
     color: var(--color-white);
+    font-weight: bold; /* Cambia el estilo de fuente a tu preferencia */
 }

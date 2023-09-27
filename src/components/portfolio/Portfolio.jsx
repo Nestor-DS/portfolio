@@ -1,6 +1,6 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/portfolio1.jpg'
+import IMG1 from '../../assets/svgProyects/FindApp-img1.svg'
 
 const data = [
   {
@@ -8,15 +8,6 @@ const data = [
     image:  IMG1,
     title:  'FindApp',
     github: 'https://github.com/Nestor-DS/FindApp',
-    demo: ''
-  },
-
-  {
-    id: 2,
-    image:  IMG1,
-    title:  'FindApp',
-    github: 'https://github.com/Nestor-DS/FindApp',
-    demo: '#about'
   }
 ]
 
@@ -38,8 +29,8 @@ const Portfolio = () => {
               </div>
               <h3>{title}</h3>
               <div className="portfolio__item-cta">
-                <a href={github} className='btn' target='_blank' align="center">Github</a>
-                <a href={demo} className='btn btn-primary' target='_blank'>About</a>
+                <a id="btnGit" href={github} className='btn' target='_blank' align="center">GitHub</a>
+                {/*<a href={demo} className='btn btn-primary' target='_blank'>About</a>*/}
               </div> 
             </article>
             )
