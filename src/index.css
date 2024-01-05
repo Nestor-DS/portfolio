@@ -1,5 +1,4 @@
-@import url('https://fonts.google.com/share?selection.family=Noto%2BSerif%2BJP:wght@200');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -36,7 +35,7 @@ html {
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
@@ -128,7 +127,7 @@ img {
 
 @media screen and (max-width: 600px){
     .container {
-        width: var(--container-width-ms);
+        width: var(--container-width-sm);
     }
 
     section > h2 {

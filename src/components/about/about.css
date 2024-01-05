@@ -4,6 +4,7 @@ section {
 
 .about {
     background: var(--color-primary-variant2);
+    font-weight: bold;
 }
 
 .about__container {
@@ -27,7 +28,7 @@ section {
 }
 
 .about__me-image {
-    width: 20rem;
+    width: 21rem;
     border-radius: 2rem;
     overflow: hidden;
     transform: rotate(10deg);
@@ -48,30 +49,35 @@ section {
     background: var(--color-bg-variant);
     border: 1px solid transparent;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: .7rem; /* Reducir el relleno de la tarjeta */
     text-align: center;
     transition: var(--transition);
 }
 
 .about__card:hover {
-    background: transparent;
+    transform: scale(1.1);
+    background: var(--color-primary-variant);
     border-color: var(--color-bg-variant);
     cursor: default;
+    font-weight: bold;
 }
 
 .about__icon {
-    color: var(--color-primary);
-    font-size: 1.4rem;
+    font-size: 1.2rem; /* Reducir el tamaño del icono */
     margin-bottom: 1rem;
 }
 
+.about__icon:hover {
+    transition: var(--transition);
+    color: var(--color-bg-variant);
+}
+
 .about__card h5 {
-    font-size: 0.95rem;
+    font-size: 0.9rem; /* Reducir el tamaño del título */
 }
 
 .about__card small {
-    font-size: 0.7rem;
-    color: var(--color-light);
+    font-size: 0.6rem; /* Reducir el tamaño del texto pequeño */
 }
 
 .about__content p {
@@ -79,6 +85,19 @@ section {
     color: var(--color-light);
 }
 
+.btn:hover {
+    font-weight: bold;
+    transform: scale(1.1); /* Increase the size of the button */
+}
+
+.about__text {
+    font-size: .95rem; /* Reducir el tamaño del texto */
+    margin-bottom: 1rem;
+}
+
+.about__me__header{
+    font-weight: bold;
+}
 
 /* Media queries (Medium devices) */
 
@@ -90,7 +109,7 @@ section {
 
     .about__me {
         width: 50%;
-        margin: 2rem auto 4rem
+        margin: 2rem auto 4rem;
     }
 
     .about__content p {
@@ -101,13 +120,18 @@ section {
 /* Media queries (small devices) */
 
 @media screen and (max-width: 600px){
+    .about__container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
     .about__me {
         width: 65%;
         margin: 0 auto 3rem;
     }
 
     .about__cards {
-        grid-template-columns: 1fr fr;
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
 

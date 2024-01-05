@@ -9,7 +9,7 @@ const About = () => {
     return (
         <section id='about'>
             <h5>Conoce un poco</h5>
-            <h2>Sobre mí</h2>
+            <h2 className='about__me__header'>Sobre mí</h2>
             <div className='container about__container'>
 
                 <div className='about__me'>
@@ -49,7 +49,7 @@ const About = () => {
                     <div className="about__cards">
                         
                     </div>
-                    <p>
+                    <p className='about__text'>
                         Apasionado por las nuevas tecnologías y con una habilidad en constante mejora para abordar desafíos, 
                         me encuentro impulsado en una búsqueda constante de conocimiento. Siempre dispuesto a aprender y crecer, 
                         empleando una resolución creativa de problemas.  Estoy emocionado por contribuir al mundo del desarrollo 
