@@ -4,6 +4,8 @@ import { HiCheck } from 'react-icons/hi'
 import  HCIA1  from '../../assets/pdf/HCIA Cloud Computing V4 - Nestor Duhamel Sanchez Perez.pdf'
 import  HCIA2  from "../../assets/pdf/HCIA-Datacom 2022 Nestor Duhamel Sanchez Perez.pdf"
 
+const google_cloud = 'https://www.cloudskillsboost.google/public_profiles/6a1b32b0-0c59-46a4-a13c-72034f262a8c'
+
 const Services = () => {
   return (
     <section id='services'>
@@ -13,7 +15,7 @@ const Services = () => {
       <div className="container services__container">
         {/* First service GOOGLE CLOUD*/}
         <article className='service'>
-          <a href="https://www.cloudskillsboost.google/public_profiles/6a1b32b0-0c59-46a4-a13c-72034f262a8c"
+          <a href={google_cloud}
           target='_blank' rel='noopener noreferrer'>
             <div className="service__head">
               <h3>Google Cloud</h3>

@@ -1,3 +1,7 @@
+.container.experience__container{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .experience__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -6,15 +10,17 @@
 
 .experience__container > div {
     background: var(--color-bg-variant);
-    padding: 2.4rem 5rem;
+    padding: 2rem 3.3rem;
     border-radius: 2rem;
     border: 1px solid transparent;
+    transition: var(--transition);
 }
 
 .experience__container > div:hover {
     background: transparent;
     border-color: var(--color-primary-variant);
     cursor: default;
+    transition: var(--transition);
 }
 
 .experience__container > div h3 {
@@ -39,11 +45,28 @@
     color: var(--color-primary);
 }
 
+.skill__title {
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.skill__title:hover {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--color-primary);
+}
+
 /* Media queries (Medium devices) */
 
 @media screen and (max-width: 1024px){
     .experience__container {
         grid-template-columns: 1fr;
+    }
+
+    .container.experience__container{
+        grid-template-columns: 1fr ;
     }
 
     .experience__container > div {

@@ -1,3 +1,4 @@
+/* Estilo predeterminado para la barra de navegación */
 nav {
     background: rgba(0, 0, 0, 0);
     width: max-content;
@@ -37,4 +38,31 @@ nav a.active {
     background: var(--color-primary-variant);
     color: var(--color-white);
     font-weight: bold;
+    transition: var(--transition);
+}
+
+/* Estilo para dispositivos medianos (tabletas, etc.) */
+@media screen and (max-width: 1024px){
+    nav {
+        bottom: 0; /* Ajusta la posición en la parte inferior */
+        padding: 1rem; /* Ajusta el relleno */
+    }
+
+    nav a {
+        padding: 0.5rem; /* Ajusta el relleno de los enlaces */
+        font-size: 0.9rem; /* Ajusta el tamaño de la fuente */
+    }
+}
+
+@media screen and (max-width: 600px){
+    nav {
+        justify-content: space-around; /* Cambia el estilo para centrar y espaciar los elementos */
+        padding: 1rem; /* Ajusta el relleno */
+        bottom: 2rem; /* Ajusta la posición en la parte inferior (sube la barra) */
+    }
+
+    nav a {
+        padding: 0.5rem; /* Ajusta el relleno de los enlaces */
+        font-size: 0.9rem; /* Ajusta el tamaño de la fuente */
+    }
 }

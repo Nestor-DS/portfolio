@@ -12,7 +12,7 @@
 
 :root {
     --color-bg: #2d2d4e;
-    --color-bg-variant: #2c2c6c;
+    --color-bg-variant: #3d2c6c;
     --color-primary: #4db5ff;
     --color-primary-variant: rgba(77, 181, 255, 0.4);
     --color-primary-variant2:rgba(57, 115, 156, 0.4);
@@ -39,7 +39,7 @@ body {
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url(../src/assets/bg-texture.png);
+    background-image: url(../src/assets/bg-texture2.png);
 }
 
 /* General styles */
@@ -55,7 +55,7 @@ h1 {
 }
 
 section {
-    margin-top: 8rem;
+    margin-top: 3rem;
     height: 120vh;
 }
 
@@ -119,7 +119,7 @@ img {
     }
 
     section {
-        margin-top: 6rem;
+        margin-top: 4rem;
     }
 }
 

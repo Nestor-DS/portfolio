@@ -6,13 +6,21 @@ import { BsWhatsapp } from 'react-icons/bs'
 
 import emailjs from '@emailjs/browser';
 
+const serviceID = 'service_oqdr3bo';
+const templateID = 'template_y1rd81l';
+const userID = '_VUY4xLOVbMm7IUzw';
+
+const mailto = 'mailto:nestorduhamel18@outlook.es'
+const messenger = 'https://m.me/profile.php?id=100080481984475'
+const whatsapp = 'https://wa.me/527721029168'
+
 const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_oqdr3bo', 'template_y1rd81l', form.current, '_VUY4xLOVbMm7IUzw')
+    emailjs.sendForm(serviceID, templateID, form.current, userID)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -24,33 +32,34 @@ const Contact = () => {
 
   return (
     <section id='contact'>
+      {/* Contact section title */}
       <h5>Ponerse en contacto</h5>
       <h2>Contactame</h2>
 
       <div className="container contact__container">
         <div className="contact__options">
-          {/*----------- Email -----------*/}
+          {/* Email option */}
           <article className='contact__option'>
             <HiOutlineMail className='contact__option-icon'/>
             <h4>Email</h4>
-            <a href="mailto:nestorduhamel18@outlook.es" target='_blank' rel='noopener noreferrer'>Contactar</a>
+            <a href={mailto} target='_blank' rel='noopener noreferrer'>Contactar</a>
           </article>
 
-          {/*----------- Facebook -----------*/}
+          {/* Messenger option */}
           <article className='contact__option'>
             <PiMessengerLogoBold className='contact__option-icon'/>
             <h4>Messenger</h4>
-            <a href="https://m.me/profile.php?id=100080481984475" target='_blank' rel='noopener noreferrer'>Contactar</a>
+            <a href={messenger} target='_blank' rel='noopener noreferrer'>Contactar</a>
           </article>
 
-          {/*----------- WhatsApp -----------*/}
+          {/* WhatsApp option */}
           <article className='contact__option'>
             <BsWhatsapp className='contact__option-icon'/>
             <h4>WhatsApp</h4>
-            <a href="https://wa.me/7721029168" target="_blank" rel="noopener noreferrer">Contactar</a>
+            <a href={whatsapp} target="_blank" rel="noopener noreferrer">Contactar</a>
           </article>
         </div>
-        {/*---- Form ---- */}
+        {/* Contact form */}
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder='Nombre completo' required/>
           <input type="text" name='email' placeholder='Mail' required/>

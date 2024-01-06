@@ -5,6 +5,11 @@ import { BiLogoInstagramAlt } from 'react-icons/bi'
 import { FaTwitter } from 'react-icons/fa'
 import { BsYoutube } from 'react-icons/bs'
 
+const facebook = 'https://facebook.com/profile.php?id=100080481984475'
+const instagram = 'https://www.instagram.com/_sar_02_/'
+const twitter = 'https://twitter.com'
+const youtube = 'https://www.youtube.com/channel/UCtohTKloNRibe2JrisdXolA'
+
 const Footer = () => {
     return (
         <footer>
@@ -21,10 +26,10 @@ const Footer = () => {
             </ul>
 
             <div className='footer__socials'>
-                <a href="https://facebook.com/profile.php?id=100080481984475" target='_blank' rel='noopener noreferrer'><FaFacebook/></a>
-                <a href="https://www.instagram.com/_sar_02_/" target='_blank' rel='noopener noreferrer'><BiLogoInstagramAlt/></a>
-                <a href="https://twitter.com" target='_blank' rel='noopener noreferrer'><FaTwitter/></a>
-                <a href="https://www.youtube.com/channel/UCtohTKloNRibe2JrisdXolA" target='_blank' rel='noopener noreferrer'><BsYoutube/></a>
+                {/*<a href={facebook} target='_blank' rel='noopener noreferrer'><FaFacebook/></a>*/}
+                <a href={instagram} target='_blank' rel='noopener noreferrer'><BiLogoInstagramAlt/></a>
+                {/*<a href={twitter} target='_blank' rel='noopener noreferrer'><FaTwitter/></a>*/}
+                <a href={youtube} target='_blank' rel='noopener noreferrer'><BsYoutube/></a>
             </div>
 
             <div className='footer__copyright'>
