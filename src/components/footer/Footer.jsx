@@ -16,11 +16,11 @@ const Footer = () => {
             <a href="#" className='footer__logo'>Nestor</a>
 
             <ul className='permalinks'>
-                <li><a href="#">Home</a></li>
+                <li><a href="#">Inicio</a></li>
                 <li><a href="#about">Sobre mi</a></li>
                 <li><a href="#experience">Experiencia</a></li>
-                <li><a href="#services">Estudios</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Conocimientos</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
                {/*<li><a href="#testimonials">Testimonials</a></li>*/}
                 <li><a href="#contact">Contacto</a></li>
             </ul>
@@ -33,7 +33,7 @@ const Footer = () => {
             </div>
 
             <div className='footer__copyright'>
-                <small>&copy; Buenas</small>
+                <small>&copy; Nestor-DS</small>
             </div>
         </footer>
     )
