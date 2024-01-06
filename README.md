@@ -10,6 +10,7 @@ Currently, two official plugins are available:
 deploy: https://portfolio-nd.vercel.app/
 
 Librarys
+
 npm install @emailjs/browser
 npm install react-icons --save
 npm install swiper
