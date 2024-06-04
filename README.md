@@ -11,6 +11,18 @@ Deploy: [Portafolio](https://portfolio-nd.vercel.app/)
 
 Librarys
 
+```bash
+npm install
+
 npm install @emailjs/browser
+
 npm install react-icons --save
+
 npm install swiper
+```
+
+Run
+
+```bash
+npm run dev
+```
