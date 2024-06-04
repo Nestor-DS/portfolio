@@ -8,7 +8,7 @@ import { BsFolderFill } from "react-icons/bs";
 const About = () => {
   return (
     <section id="about">
-      <h5>Conoce un poco, test</h5>
+      <h5>Conoce un poco</h5>
       <h2 className="about__me__header">Sobre mí</h2>
       <div className="container about__container">
         <div className="about__me">
